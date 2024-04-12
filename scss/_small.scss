@@ -1,0 +1,108 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  height: 100%;
+}
+/*---- apply a natural box layout model to all elements -------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: $defaultFont;
+  font-weight: $normalWeight;
+  color: $fontColor;
+}
+
+#headerWrapper {
+  color: #a5521fed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header {
+  display: flex;
+  justify-content:left;
+  padding: 1rem $gutter;
+  gap: 8px;x
+  h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: $boldWeight;
+  }
+}
+
+
+
+#navWrapper {
+  background-color: #a5521f;
+}
+
+nav {
+  ul li a {
+    display: block;
+    padding: .9rem 2vw;
+    border-top: solid 1px rgba(0,0,0,0.2);
+  }
+
+  ul li a:hover {
+    background-color: rgba(79, 4, 133, 0.2);
+
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    li {
+      flex: 1;
+    }
+  }
+  li.active {
+    background-color:rgb(182, 26, 12);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+  }
+  a {
+    display: block;
+    padding: 0.75rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+
+
+
+#mainWrapper {
+  h1 {
+    font-weight: $boldWeight;
+    color: #a5521f;
+    margin: 2rem;
+    padding: $gutter;
+  }
+}
+
+
+
+// begin the footer
+
+#footerWrapper {
+  background-color: #a5521f;
+}
+footer {
+  padding: 0.5rem $gutter;
+  p {
+    margin: 0;
+    font-weight: $lightWeight;
+    text-align: center;
+    color: white;
+  }
+}

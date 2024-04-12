@@ -1,0 +1,13 @@
+header, nav, main, footer {
+    max-width: 60rem;
+    margin: auto;
+}
+
+.parent {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  nav ul li a {
+    padding: .7rem 2rem;
+    font-size: .8rem;
+  } // end nav
