@@ -3,11 +3,44 @@ header, nav, main, footer {
     margin: auto;
 }
 
+#hamburgerBtn{display: none;}
+nav {
+  position: static;
+  transform: translateX(0);
+  width: auto;
+div {display: none;}
+ul {
+  display: flex;
+  margin-left: 2%;
+}
+ul li a {
+  border: none;
+  padding: .6rem 1.5rem;
+}
+}
 .parent {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  
+
 
   nav ul li a {
     padding: .7rem 2rem;
     font-size: .8rem;
   } // end nav
+
+  #fancyhotel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  section {
+    grid-template-areas: 
+    "photo"
+    "name"
+    "phone phone"  
+    "address address"
+    ;
+    column-gap: 8px;
+    padding-right: 10px;
+  }
+  }

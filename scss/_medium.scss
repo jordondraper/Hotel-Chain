@@ -7,13 +7,25 @@ header {
     grid-template-columns: 1fr 1fr;
   }
 
-nav {
-
-    ul {
-        display: flex;
-    } // end ul
+ // end ul
     ul li a {
         border: none;
     }
 
-} // end nav
+ // end nav
+
+#fancyhotel {
+    section {
+      grid-template-areas: 
+      "photo name"
+      "photo phone"  
+      "photo address"
+      ;
+      column-gap: 8px;
+      p2 {
+        margin-bottom: 70px;
+        margin-top: 50px;
+        text-align: left;
+      }
+    }
+  }

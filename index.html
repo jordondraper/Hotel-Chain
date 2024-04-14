@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 <link href="css/styles.min.css" rel="stylesheet">
 
@@ -23,29 +26,34 @@
 
 </head>
 <body>
-    
+    <div id="pageWrapper">
+        <div class="content">
 <div id="headerWrapper">
     <header>
-        <img src="favicon_io-arch/architecture.logo.png" alt="logo" width="75" height="75">
-        <h1 class="gradient-text">Big Architect Services</h1>
+        <a href="#"><img src="architecture.logo-assets/logo1x.png" alt="favicon" width="50" height="50" srcset="architecture.logo-assets/logo1x.png 1x, architecture.logo-assets/logo2x.png 2x, architecture.logo-assets/logo3x.png 3x"></a>
+        <h1 class="gradient-text">Luxury Hotels</h1>
+        <button id="hamburgerBtn">&#9776;</button>
     </header>
 </div>
 
 
-<div id="navWrapper">
     <nav>
+        <div>Menu</div>
        <ul>
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Contact</a></li>
        </ul>
     </nav>
-</div>
+
 
 <div id="mainWrapper">
 <main>
-    <h1>Inventory</h1>
-    
+    <h1>Hotels</h1>
+    <p>
+        Indulge in unparalleled luxury at our exquisite hotel, where opulence meets unparalleled service. Nestled in a pristine locale, our resort boasts stunning views and lavish amenities. Immerse yourself in the lap of luxury with elegantly appointed suites featuring modern comforts and lavish furnishings. Savor culinary delights crafted by world-renowned chefs at our gourmet restaurants. Relax and rejuvenate at our state-of-the-art spa, offering a myriad of indulgent treatments. Whether you're lounging by the sparkling pool or exploring nearby attractions, our attentive staff ensures every moment exceeds expectations. Experience the epitome of refinement and sophistication at our unparalleled luxury hotel.</p>
+    <div id="fancyhotel">
+    </div>
 </main>
 </div>
 
@@ -57,6 +65,8 @@
 
 
 </div>
-<script src="js/scripts.js"></script>
+<script src="js/scripts.js" type="module"></script>
+</div> <!--content end-->
+</div> <!--end pagewrapper-->
 </body>
 </html>
